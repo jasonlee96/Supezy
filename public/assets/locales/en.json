@@ -1,0 +1,23 @@
+{
+    "Language": "EN",
+    "Introduction": "test",
+    "Advantages": "Advantage",
+    "nav":{
+      "Home": "Home",
+      "Product": "Product",
+      "AboutUs": "About Us",
+      "ContactUs": "Contact Us",
+      "FAQ": "FAQ"
+    },
+    "home": {
+      "Title": "Home Title",
+      "quotes":{
+          "title": "Title",
+          "description": "Quotes Lorem Ipsum is simply dummy text of the printing and typesetting industry.",
+          "author": "Supezy"
+      }
+    },
+    "product": {
+      "Title": "Title"
+    }
+  }

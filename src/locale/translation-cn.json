@@ -1,0 +1,17 @@
+{
+    "Language": "中文",
+    "Introduction": "测试",
+    "Advantages": "好处",
+    "nav":{
+      "Home": "主页",
+      "Product": "产品",
+      "AboutUs": "关于我们",
+      "ContactUs": "联络我们"
+    },
+    "home": {
+      "Title": "主页标题"
+    },
+    "product": {
+      "Title": "标题"
+    }
+}

@@ -1,0 +1,17 @@
+{
+  "Language": "EN",
+  "Introduction": "test",
+  "Advantages": "Advantage",
+  "nav":{
+    "Home": "Home",
+    "Product": "Product",
+    "AboutUs": "About Us",
+    "ContactUs": "Contact Us"
+  },
+  "home": {
+    "Title": "Home Title"
+  },
+  "product": {
+    "Title": "Title"
+  }
+}

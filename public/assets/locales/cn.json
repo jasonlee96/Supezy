@@ -1,0 +1,23 @@
+{
+    "Language": "中文",
+    "Introduction": "测试",
+    "Advantages": "好处",
+    "nav":{
+      "Home": "主页",
+      "Product": "产品",
+      "AboutUs": "关于我们",
+      "ContactUs": "联络我们",
+      "FAQ": "常见问题"
+    },
+    "home": {
+      "Title": "主页标题",
+      "quotes":{
+          "title": "信息",
+          "description": "这是一个引述，阿松大考的帕克山东帕克都怕看到平时看到",
+          "author": "Supezy"
+      }
+    },
+    "product": {
+      "Title": "标题"
+    }
+}

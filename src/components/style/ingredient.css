@@ -1,0 +1,8 @@
+.ing-splide .splide__slide.is-active .ing-item{
+    transform: scale(1.0);
+}
+
+.ing-splide .splide__slide .ing-item{
+    transform: scale(0.8);
+    transition: 0.4s linear;
+}
