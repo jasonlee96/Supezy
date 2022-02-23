@@ -1,9 +1,28 @@
-import {useState} from "react";
+import {useState, useEffect, useRef} from "react";
 import { Splide, SplideSlide } from '@splidejs/react-splide';
 import '@splidejs/splide/dist/css/splide.min.css';
 import '../style/ingredient.css'
-function IngredientList() {
-    let [ingredient, setIngredient] = useState("Item 1");
+import { useTranslation, Trans } from 'react-i18next';
+import  IngredientItem  from "./Ingredient";
+import {ProductViewModel} from "../../context/Model";
+import { useGlobalState } from "../../context/Context";
+import $ from "jquery";
+
+export interface Ingredient{
+    name: string,
+    image: string,
+    description: string,
+}
+function IngredientList({header, ingredients}:
+    {
+        header: string
+        ingredients: Array<Ingredient>
+    }) {
+    let loaded = false;
+    const { t, i18n } = useTranslation();
+    const { state, setState } = useGlobalState();
+    let [ingredient, setIngredient] = useState("");
+    const splideRef = useRef<null | Splide>(null);
     let splideMoved = function(splide, prev, next, dest){
         var element = splide.Components.Elements.slides[dest];
         if(element){
@@ -11,13 +30,34 @@ function IngredientList() {
             setIngredient(element.innerHTML);
         }
     };
+    let splideUpdated = function(splide){
+        if(loaded) return;
+        var desc = splide.root.querySelector(".splide__slide.is-active").querySelector(".ing-desc").innerHTML;
+
+        if(desc){
+            setIngredient(desc);
+            loaded = true;
+        }
+    }
+
+    useEffect(function(){
+        setTimeout(()=> {
+        var desc = splideRef.current?.splide?.root?.querySelector(".splide__slide.is-active")?.querySelector(".ing-desc")?.innerHTML ?? "";
+
+        if(desc){
+            setIngredient(desc);
+        }
+    }, 300);
+    }, [state.lang]);
+
     return (
       <div className="pt-5 d-flex flex-column justify-content-center bg-main-dark">
           <div className="p-0 p-md-5 mx-5">
-              <div className="text-white fs-1 fw-bolder text-uppercase">Main Ingredients</div>
+              <div className="text-white fs-1 fw-bolder text-uppercase">{header}</div>
           </div>
           <div className="py-5">
             <Splide
+            onVisible={splideUpdated}
             onMoved={splideMoved}
             className="py-5 ing-splide"
             options={{
@@ -37,55 +77,11 @@ function IngredientList() {
               },
               updateOnMove:true
             }}
+            ref={ splideRef }
             >
-                <SplideSlide>
-                    <div className="text-center ing-item">
-                        <div className="circle mx-auto" style={{width:"200px", height: "200px"}}>
-                            <div className="circle w-100 h-100 bg-white"></div>
-                        </div>
-                    </div>
-                    <div className="text-center d-none ing-desc">Item 1 Lorem ipsum dolor sit amet consectetur adipisicing elit. Impedit itaque eum quidem architecto, deleniti atque nam blanditiis qui laborum eligendi est numquam similique aut natus accusantium fugit id? Ullam, dolores!</div>
-                </SplideSlide>
-                <SplideSlide>
-                    <div className="text-center  ing-item">
-                        <div className="circle mx-auto" style={{width:"200px", height: "200px"}}>
-                            <div className="circle w-100 h-100 bg-white"></div>
-                        </div>
-                    </div>
-                    <div className="text-center d-none ing-desc">Item 2</div>
-                </SplideSlide>
-                <SplideSlide>
-                    <div className="text-center ing-item">
-                        <div className="circle mx-auto" style={{width:"200px", height: "200px"}}>
-                            <div className="circle w-100 h-100 bg-white"></div>
-                        </div>
-                    </div>
-                    <div className="text-center d-none ing-desc">Item 3</div>
-                </SplideSlide>
-                <SplideSlide>
-                    <div className="text-center ing-item">
-                        <div className="circle mx-auto" style={{width:"200px", height: "200px"}}>
-                            <div className="circle w-100 h-100 bg-white"></div>
-                        </div>
-                    </div>
-                    <div className="text-center d-none ing-desc">Item 4</div>
-                </SplideSlide>
-                <SplideSlide>
-                    <div className="text-center ing-item">
-                        <div className="circle mx-auto" style={{width:"200px", height: "200px"}}>
-                            <div className="circle w-100 h-100 bg-white"></div>
-                        </div>
-                    </div>
-                    <div className="text-center d-none ing-desc">Item 5</div>
-                </SplideSlide>
-                <SplideSlide>
-                    <div className="text-center ing-item">
-                        <div className="circle mx-auto" style={{width:"200px", height: "200px"}}>
-                            <div className="circle w-100 h-100 bg-white"></div>
-                        </div>
-                    </div>
-                    <div className="text-center d-none ing-desc">Item 6</div>
-                </SplideSlide>
+                {
+                   ingredients.map((item) => <IngredientItem ingredient={item} key={item.name.replace(" ", "_").toString()} key1={item.name.replace(" ", "_").toString()}/>)
+                }
             </Splide>
         </div>
         <div className="p-5 bg-main-overlay w-100">

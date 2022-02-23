@@ -31,7 +31,7 @@ i18n.use(Backend).use(initReactI18next).init({
   debug: true,
   whitelist: languages,
   lng: 'cn',
-
+  preload: ['cn', 'en'],
   backend: {
     loadPath: `${process.env.PUBLIC_URL}/assets/locales/{{lng}}.json`,
   },
@@ -39,8 +39,8 @@ i18n.use(Backend).use(initReactI18next).init({
   interpolation: {
     escapeValue: false,
   },
-  react: {
-    useSuspense: false
-  }
+  // react: {
+  //   useSuspense: false
+  // }
 });
 export default i18n;

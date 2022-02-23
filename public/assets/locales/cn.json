@@ -12,12 +12,356 @@
     "home": {
       "Title": "主页标题",
       "quotes":{
-          "title": "信息",
-          "description": "这是一个引述，阿松大考的帕克山东帕克都怕看到平时看到",
-          "author": "Supezy"
+          "description": "生活百变， 微笑不变。 健康良伴， 用心陪伴。珍惜时光， 享受生活。",
+          "author": "SDM Global Sdn Bhd."
+      },
+      "product":{
+        "header": "我们的产品",
+        "title": "桃子坚果奶茶",
+        "description": "桃子坚果奶茶是一款采取科学配方，并由七种优质坚果混合配制而成的健康营养奶茶。此款奶茶喝了不致痘， 也不胀气， 除了能满足爱恨爱茶人士的 “奶茶瘾” 之外， 还可以让身体吸取多种高蛋白质以及高成分有益含量的好处。",
+        "href": "/product/peachnut",
+        "buttonText": "了解更多"
+      },
+      "benefit":{
+        "title": "坚果的好处",
+        "subtitle": "坚果",
+        "description": "坚果是属于营养价值高的食品， 但是针对不同年龄层的认识， 有不同的诉求。 年长者看重的是健康营养意识， 年轻人追求的则是坚果的口感口味的变化。",
+        "list":[
+          {
+            "key":"a",
+            "icon": "",
+            "title": "保护心血管和心脏",
+            "description": ""
+          },
+          {
+            "key":"b",
+            "icon": "",
+            "title": "预防高血糖和糖尿病",
+            "description": ""
+          },
+          {
+            "key":"c",
+            "icon": "",
+            "title": "促进血液循环， 控制胆固醇的含量",
+            "description": ""
+          },
+          {
+            "key":"d",
+            "icon": "",
+            "title": "使血管流通， 防止血液凝块",
+            "description": ""
+          }
+        ]
       }
     },
     "product": {
-      "Title": "标题"
+      "header": "速易食脆脆饮",
+      "ingredientHeader":"主要成分",
+      "ingredients":[
+        {
+          "name":"杏仁",
+          "image": "assets/img/products/ingredients/almond.png",
+          "description":""
+        },
+        {
+          "name":"榛子",
+          "image": "assets/img/products/ingredients/hazelnut.png",
+          "description":""
+        },
+        {
+          "name":"夏威夷果",
+          "image": "assets/img/products/ingredients/macadamia.png",
+          "description":""
+        },
+        {
+          "name":"碧根果",
+          "image": "assets/img/products/ingredients/pecan.png",
+          "description":""
+        },
+        {
+          "name":"开心果",
+          "image": "assets/img/products/ingredients/pistachio.png",
+          "description":""
+        },
+        {
+          "name":"核桃",
+          "image": "assets/img/products/ingredients/walnut.png",
+          "description":""
+        },
+        {
+          "name":"松子",
+          "image": "assets/img/products/ingredients/pinenut.png",
+          "description":""
+        },
+        {
+          "name":"大米",
+          "image": "assets/img/products/ingredients/barley.png",
+          "description":""
+        },
+        {
+          "name":"玉米",
+          "image": "assets/img/products/ingredients/corn.png",
+          "description":""
+        },
+        {
+          "name":"麦",
+          "image": "assets/img/products/ingredients/wheat.png",
+          "description":""
+        },
+        {
+          "name":"奇亚籽",
+          "image": "assets/img/products/ingredients/chiaseed.png",
+          "description":""
+        },
+        {
+          "name":"燕麦片",
+          "image": "assets/img/products/ingredients/oat.png",
+          "description":""
+        }
+      ],
+      "productName":"桃子坚果奶茶",
+      "productDescription": "桃子坚果奶茶是一款采取科学配方，并由七种优质坚果混合配制而成的健康营养奶茶。此款奶茶喝了不致痘， 也不胀气， 除了能满足爱恨爱茶人士的 “奶茶瘾” 之外， 还可以让身体吸取多种高蛋白质以及高成分有益含量的好处。",
+      "productDetail": [
+        {
+          "key": "desc1",
+          "title": "独领风骚，合则更妙",
+          "description": "为了提高饮用者的体验感，我们另外搭配了多种不可抗拒的坚果和奶茶一起推出， 让你在享受奶茶的过程中，同时咀嚼坚果的美妙滋味， 以二合为一（一包脆谷物 + 奶茶）的方式尝试一种新吃法， 完全符合： SUPEZY CRISPY DRINK 速易食脆脆饮的研发宗旨： 喝出营养， 吃出健康！",
+          "image": "/assets/img/products/SDM_4.png",
+          "imageStyle":{
+            "minHeight": "280px",
+            "maxWidth": "250px"
+          }
+        },
+        {
+          "key": "desc2",
+          "title": "桃子坚果奶茶",
+          "description": "桃子坚果奶茶无论是从“喝不胖的奶茶”角度而出发， 或者从“吃不腻的营养坚果”而言， 都是给顾客群体带来了 “双利益” 价值的承诺， 并给予了消费者“超乎预期”的效果！",
+          "image": "/assets/img/products/product-nuts.png"
+        },
+        {
+          "key": "desc3",
+          "title": "营养功效",
+          "description": "坚果中含有大量不饱和脂肪酸， 同时还含有20%左右的优质蛋白质和十多种氨基酸， 是大脑需要的营养成分。 另外， 坚果中所含有的维生素 B1/B2/B6、维生素E、钙、磷、锌、铁等营养素对大脑神经细胞也有益， 因此， 常吃坚果还可以改善脑部营养， 起到益智健脑的效果。",
+          "image": "/assets/img/products/nutrition.png"
+        }
+      ],
+      "benefit": {
+        "title": "坚果的好处",
+        "items": [
+          {
+            "key": "a",
+            "title": "FIRST",
+            "description": "不饱和的脂肪酸对保护心血管和心脏有帮助",
+            "image": "/assets/img/products/bloodvessel.jpg"
+          },
+          {
+            "key": "b",
+            "title": "SECOND",
+            "description": "纤维素可以预防高血糖和糖尿病等疾病",
+            "image": "/assets/img/products/cellulose.jpg"
+          },
+          {
+            "key": "c",
+            "title": "THIRD",
+            "description": "促进血液循环， 防止杂质推挤在血管",
+            "image": "/assets/img/products/bloodclot2.jpg"
+          },
+          {
+            "key": "d",
+            "title": "FOURTH",
+            "description": "精氨酸可以提高心脏细胞的活性，防止血液凝块",
+            "image": "/assets/img/products/bloodclot.jpg"
+          }
+        ]
+      },
+      "suitablePerson": {
+        "title": "适用人群",
+        "items": [
+          {
+            "key": "1",
+            "title": "FIRST",
+            "description": "选择用本产品来代替饮料， 如奶茶或咖啡"
+          },
+          {
+            "key": "2",
+            "title": "SECOND",
+            "description": "不喜欢吃坚果的人士"
+          },
+          {
+            "key": "3",
+            "title": "THIRD",
+            "description": "希望通过和的方式吸取坚果的营养的人士"
+          },
+          {
+            "key": "4",
+            "title": "FOURTH",
+            "description": "牙齿不好及绑牙者， 不适合吃硬食者"
+          }
+        ]        
+      },
+      "direction":{
+          "title": "饮用方式",
+          "description": "食物盒里配备了一份粉状饮料， 一份粒状谷物",
+          "items": [
+            {
+              "key": "first",
+              "title":"方式一",
+              "items": [
+                {
+                  "key": "a",
+                  "step": "撕开两包一起倒入装有150-180ml的水杯， 浸泡后直接饮用（有如泡饭的做法一样）"
+                }
+              ]
+            },
+            {
+              "key": "second",
+              "title":"方式二",
+              "items": [
+                {
+                  "key": "a",
+                  "step": "撕开一包粉状饮料并倒入装有150-180ml的水杯， 另外一份坚果谷拿在手里吃。"
+                }
+              ]
+            }
+          ]
+      },
+      "cert":{
+          "title": "品质认证",
+          "description": "我们的产品获得了以下认证。",
+          "items": [
+            {
+              "key": "a",
+              "title": "马来西亚卫生部认证",
+              "name": "MINISTRY OF HEALTH MALAYSIA CERTIFIED"
+            },
+            {
+              "key": "b",
+              "title": "GMP 优良制造标准生产",
+              "name": "GOOD MANUFACTURING PRACTICE"
+            },
+            {
+              "key": "c",
+              "title": "SGS 国际安全认证",
+              "name": "FOOD SAFETY CERTIFICATION"
+            }
+          ]
+      }
+    },
+    "faq":{
+      "title": "常见问题",
+      "faqs":[
+        {
+          "id": 1,
+          "is_default": true,
+          "group_title": "SUPEZY CRISPY DRINK",
+          "group_items":[
+            {
+              "id": 1,
+              "question": "1.SUPEZY CRISPY DRINK 是什么？",
+              "answer": "全马首创 健康奶茶，桃子脆脆饮。含有7 包高营养健康奶茶 & 7 包 peach Oolong Crispy cereal 脆谷物"
+            },
+            {
+              "id": 2,
+              "question": "2.SUPEZY 为什么是健康奶茶？",
+              "answer": "SUPEZY 含有7 种坚果制成的奶 + 来自台湾进口的乌龙茶 = 健康奶茶"
+            },
+            {
+              "id": 3,
+              "question": "3.为什么你选择SUPEZY？",
+              "answer": "因为它好喝健康，独立包装 方便携带 随时随地都可以补充营养&蛋白质！\n 大家对于 奶茶 & 健康意识 的需求越来越高 可是很多报道都说奶茶高糖 不营养  高卡路里！\n所以我们才会推出一款 好喝 低卡 的健康奶茶🥤 （只是72KCAL）+ 健康零食脆谷物（代替 奶茶的珍珠）可以搭配奶茶一起喝给予 脆脆的口感变成 脆脆饮哦！"
+            },
+            {
+              "id": 4,
+              "question": "4.如何服用SUPEZY？",
+              "answer": "搭配150-200 ML 的冷水最好喝！（浓度自调）\n也可以搭配 200 ml 的牛奶/ OAT MILK/ Almond Milk 有个不一样的搭配❤️"
+            },
+            {
+              "id": 5,
+              "question": "5.SUPEZY 的特点？",
+              "answer": "SUPEZY CRISPY DRINK 也是属于高蛋白质饮品 可以帮助发育成长！\n脆谷物 含有 很高的膳食纤维 可以帮助肠胃蠕动 & 增加饱腹感哟！\n里面含有7 种 不同类型的 坚果 可以帮助 益智健脑！适合一家大小的 健康饮料！🥤"
+            },
+            {
+              "id": 6,
+              "question": "6.Supezy 的成分？",
+              "answer": "SUPEZY 的健康奶茶是由7种坚果制成的奶，成分有：\n 杏仁 榛子 夏威夷果 碧根果 开心果 核桃 松子 🥜\n\nPEACH OOLONG CRISPY CEREAL 脆谷物的6 大成分有：\n大米 玉米 小麦 麦 奇亚籽 燕麦片"
+            },
+            {
+              "id": 7,
+              "question": "7.SUPEZY 的功效？",
+              "answer": "☑️ 由7 种 来自不一样的国家的 NUTS 组成的，可以保护 心脏& 心血管、阻止脂肪堆积 & 可以健脑 补脑！\n☑️ 高蛋白质的健康奶茶 \n☑️ 提供口感的 脆谷物 \n☑️ 提供维他命 A C E K \n☑️丰富的 CHIA SEED 高纤维可以帮助肠胃蠕动 \n☑️ 可以当作早餐/ 晚餐/ 休闲时光的小零嘴/下午茶、🉑️增加饱腹感 超过 3 小时 \n☑️ 乌龙茶成分可以帮助分解脂肪"
+            },
+            {
+              "id": 8,
+              "question": "8.这个算是代餐吗？",
+              "answer": "是的，健康奶茶搭配脆谷物可以增加饱腹感 可是我们主打它为： 健康奶茶。\n此外，SUPEZY 的脆谷物 也含有奇亚籽（chiaseed）和 燕麦片，它们高纤维&吸水后会在肠胃内膨胀，可以增加饱腹感。"
+            },
+            {
+              "id": 9,
+              "question": "9.SUPEZY适用人群？",
+              "answer": "男女老少 , 三高病患者，孕妇 哺乳妈妈，糖尿病患者，便秘者。\n小孩需要SUPEZY 提供的优质蛋白质&维他命 帮助发育成长，也可以促进脑部 骨骼发育 提高免疫力 所以男女老少都可以服用。 \n孕妇和哺乳妈妈需要均衡的饮食和营养素。有些孕妇在怀孕过程中，也会出现便秘现象，所以服用SUPEZY再配合足够的水分，可以预防便秘问题。\n此外，supezy 里的维生素，矿物质如铁质、钙质是怀孕妈妈需要的营养，能给与宝宝最好的营养。"
+            },
+            {
+              "id": 10,
+              "question": "10.SUPEZY 如何帮助平稳血糖 & 降低胆固醇？",
+              "answer": "SUPEZY 中含燕麦片& chia seed，燕麦中富含膳食纤维和B-葡聚糖，能有效地吸纳体内胆固醇/脂肪，并排出体外，\n预防心血管疾病的发生。奇亚籽含豊富的膳食纤维和Omega 3， 能促进体内代谢，降低坏胆固醇并增加好胆固醇，可以预防心脑血管疾病。\n奇亚籽也有吸水后膨胀以及高纤维的特性，能在肠胃中减缓淀粉转换成糖的速度，可以平稳血糖。"
+            },
+            {
+              "id": 11,
+              "question": "11.SUPEZY 如何帮助便秘者？",
+              "answer": "SUPEZY 含膳食纖維，清腸排毒效果極佳，每日至少喝3L的水，可以促進腸道蠕動，排出腸内宿便，也可使皮膚嫩滑紅潤、保護皮膚、養顏美容的功效。"
+            },
+            {
+              "id": 12,
+              "question": "12.哪个时候使用SUPEZY 最佳？",
+              "answer": "早餐，宵夜，下午茶，聚会，嘴馋的时候，随时随地 要补充营养的时候 都可以来一杯SUPEZY 🥤 ❤️"
+            },
+            {
+              "id": 13,
+              "question": "13.SUPEZY 含1.7 g 脂肪 、它从哪里来？",
+              "answer": "SUPEZY 含有7中不一样的坚果，这些都是产品中的脂肪，是良好脂肪的来源，可以帮助瘦身不瘦胸。\n人体需要每天摄入44-77 克的脂肪，一杯supezy 只含有1.7g 脂肪，肯定不会造成肥胖。"
+            },
+            {
+              "id": 14,
+              "question": "14.SUPEZY 可以帮助瘦身吗？",
+              "answer": "可以，要瘦身 必须控制每日饮食卡路里的摄取量。如果每天早上你吃一碗nasi lemak/ 下午茶喝一杯珍珠奶茶 ，卡路里大概500-600 kcal；\n可是你用一杯 SUPEZY（只有72 kcal） 代替你的 早餐/下午茶/宵夜，卡路里大大降低还可以解嘴馋，每日可以减少大概500kcal 的摄取量 还可以提供蛋白质&维他命&纤维，\n乌龙茶可以帮助分解脂肪，长期以来 就会有瘦身的效果。备注：产品成分没有任何伤害身体的减肥药💊❌。"
+            },
+            {
+              "id": 15,
+              "question": "15.Supezy 的产品认证？",
+              "answer": "KKM GMP SGS 的国家认证，HALAL 认证 也在Processing 🤝\n给大家最安心的体验 孕妇 三高 糖尿病患者 都可以使用！❤️"
+            }
+          ]
+        }
+      ]
+    },
+    "contact":{
+      "title":"批发商和提交回馈",
+      "distributorTitle": "批发商资讯",
+      "distributors":[
+      {
+        "key": "",
+        "icon": "",
+        "name": "Jason",
+        "position": "Test",
+        "instagram": "smileyx96",
+        "whatsapp": "60187849195"
+      }
+      ],
+      "feedback":{
+        "title": "提交产品回馈",
+        "description": "不用担心！ 这是匿名提交哟",
+        "input": "回馈",
+        "button": "提交"
+      }
+    },
+    "about":{
+      "header":"关于SDM Global",
+      "title":"我们是谁？",
+      "description":"SDM Global 源自于零食批发商Snack Distributor Malaysia。不只是做马来西亚市场， 已冲向系统化和国际化了！\n\n2019年开发健康零食市场， 把国外的健康零食带进马来西亚成立一个不只是提供货源， 还提供专业素材培训的零食开发商。\n\n2020年， 与团队成立全马首创零食界互联网品牌LOVEBITE。月销量倍增超过1万罐LOVEBITE & 2万包果干！\n\n2021筹备了一整年的新品SUPEZY CRISPY DRINK, 奶茶搭配健康零食脆谷物的火花，引爆市场！",
+      "visionTitle": "企业愿景",
+      "visionDesc": "吃零食也可以吃出健康！把更多健康食品分享给世界各地的人，成为你们的健康良伴。",
+      "missionTitle": "企业使命",
+      "missionDesc": "帮助更多90后和00后， 轻松开启互联网事业， 让更多人创造非凡人生！",
+      "news": []
     }
 }

@@ -4,6 +4,9 @@ import TitleEllipse from "./TitleEllipse";
 import Button from "./Button";
 import ImageOverlay from "./ImageOverlay";
 import Divider from "./Divider";
+import Background from "./Background";
+import BackgroundBase from "./BackgroundBase";
+import Image from "./Image";
 
 export {
     AuthRoute,
@@ -11,5 +14,8 @@ export {
     TitleEllipse,
     Button,
     ImageOverlay,
-    Divider
+    Divider,
+    Background,
+    BackgroundBase,
+    Image
 }

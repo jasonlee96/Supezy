@@ -9,18 +9,18 @@ function Quotes({children, title, author}:{
 }) {
     const [state, toggle] = useState(false)
     const animation = useSpring({
-        from: { opacity: 0, x: -20 },
+        from: { opacity: 0, x: -40 },
         to:{ 
             opacity: state ? 1 : 0,
-            x: state ? 0 : -20
+            x: state ? 0 : -40
         },
         config: { duration: 1000 },
     });
     const animationY = useSpring({
-        from: { opacity: 0, x: 20 },
+        from: { opacity: 0, x: 40 },
         to:{ 
             opacity: state ? 1 : 0,
-            x: state ? -20 : 20
+            x: state ? -40 : 0
         },
         config: { duration: 1000 },
     });
@@ -30,16 +30,16 @@ function Quotes({children, title, author}:{
     }
     return (
         
-        <div className="bg-pink-0 py-5 w-100">
+        <div className="bg-pink-0 py-5 w-100 overflow-hidden">
             <Waypoint onEnter={toggleAnimation} bottomOffset="30%">
                 <animated.div style={animation}>
-                {title &&
-                    <div className="py-3 text-center mx-5 border-bottom-main"  >
+                {title !== "" &&
+                    <div className={"py-3 text-center mx-5 border-bottom-main"}  >
                         <div className="fs-2 fw-bolder">{title}</div>
                     </div>
                 }
 
-                <div className="p-5 w-80 text-center" >
+                <div className="py-5 px-md-5 px-1 w-80 text-center" >
                     {children}
                 </div>
                 

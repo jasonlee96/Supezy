@@ -10,14 +10,363 @@
       "FAQ": "FAQ"
     },
     "home": {
-      "Title": "Home Title",
+      "Title": "主页标题",
       "quotes":{
-          "title": "Title",
-          "description": "Quotes Lorem Ipsum is simply dummy text of the printing and typesetting industry.",
-          "author": "Supezy"
+          "description": "Love at the first sip, surprise in every bite!",
+          "author": "SDM Global Sdn Bhd."
+      },
+      "product":{
+        "header": "Our Product",
+        "title": "PEACH NUTS MILK TEA",
+        "description": "PEACH NUTS MILK TEA is a healthy and nutritious milk tea produced under scientific formula with a blend of seven high-quality nuts. Consuming our milk tea will not cause any acne or flatulence. For those who are greatly addicted to milk tea, it allows the body to absorb a great variety of high protein and which are beneficial to human body.",
+        "href": "/product/peachnut",
+        "buttonText": "View More"
+      },
+      "benefit":{
+        "title": "Why Nuts?",
+        "subtitle": "Nut",
+        "description": "Nuts are ingredients with high nutritional value but people in different ages will have variety of demands. For instance, senior citizens tends to have awareness of health and nutrition, whereas the youngster tends to pursue the taste of nuts.",
+        "list":[
+          {
+            "key":"a",
+            "icon": "",
+            "title": "Helps in protecting the blood vessels and heart.",
+            "description": ""
+          },
+          {
+            "key":"b",
+            "icon": "",
+            "title": "Prevents diseases such as high blood sugar and diabetes. ",
+            "description": ""
+          },
+          {
+            "key":"c",
+            "icon": "",
+            "title": "Promotes blood circulation, and controls the content of cholesterol",
+            "description": ""
+          },
+          {
+            "key":"d",
+            "icon": "",
+            "title": "Promote circulation of blood vessels and prevents blood clotting.",
+            "description": ""
+          }
+        ]
       }
     },
     "product": {
-      "Title": "Title"
+      "header": "SUPEZY Crispy Drink",
+      "ingredientHeader":"Main Ingredients",
+      "ingredients":[
+        {
+          "name":"Almond Ground",
+          "image": "assets/img/products/ingredients/almond.png",
+          "description":""
+        },
+        {
+          "name":"Hazelnut",
+          "image": "assets/img/products/ingredients/hazelnut.png",
+          "description":""
+        },
+        {
+          "name":"Macadamia Nut",
+          "image": "assets/img/products/ingredients/macadamia.png",
+          "description":""
+        },
+        {
+          "name":"Pecan Nut",
+          "image": "assets/img/products/ingredients/pecan.png",
+          "description":""
+        },
+        {
+          "name":"Pistachio",
+          "image": "assets/img/products/ingredients/pistachio.png",
+          "description":""
+        },
+        {
+          "name":"Almond",
+          "image": "assets/img/products/ingredients/almond.png",
+          "description":""
+        },
+        {
+          "name":"Walnut",
+          "image": "assets/img/products/ingredients/walnut.png",
+          "description":""
+        },
+        {
+          "name":"Pine Nut",
+          "image": "assets/img/products/ingredients/pinenut.png",
+          "description":""
+        },
+        {
+          "name":"Barley",
+          "image": "assets/img/products/ingredients/barley.png",
+          "description":""
+        },
+        {
+          "name":"Corn",
+          "image": "assets/img/products/ingredients/corn.png",
+          "description":""
+        },
+        {
+          "name":"Wheat",
+          "image": "assets/img/products/ingredients/wheat.png",
+          "description":""
+        },
+        {
+          "name":"Chia Seeds",
+          "image": "assets/img/products/ingredients/chiaseed.png",
+          "description":""
+        },
+        {
+          "name":"Oatmeal",
+          "image": "assets/img/products/ingredients/oat.png",
+          "description":""
+        }
+      ],
+      "productName":"PEACH NUTS MILK TEA",
+      "productDescription": "PEACH NUTS MILK TEA is a healthy and nutritious milk tea produced under scientific formula with a blend of seven high-quality nuts. Consuming our milk tea will not cause any acne or flatulence. For those who are greatly addicted to milk tea, it allows the body to absorb a great variety of high protein and which are beneficial to human body.",
+      "productDetail": [
+        {
+          "key": "desc1",
+          "title": "Leading the Trend in Unity",
+          "description": "It is our intention to stimulate the experience of consumers, so we mixed varieties of irresistible nuts and milk tea that allows consumer to enjoy the milk tea while chewing on the wonderful taste of nuts. Two in one (Pack of crisp grain and Milk tea) allows consumer to try a new way of eating nuts which is fully in line with the brand purpose of SUPEZY CRISPY DRINK. Drink nutritionally, eat Healthily!",
+          "image": "/assets/img/products/SDM_4.png",
+          "imageStyle":{
+            "minHeight": "280px",
+            "maxWidth": "250px"
+          }
+        },
+        {
+          "key": "desc2",
+          "title": "Peach Nuts Milk Tea",
+          "description": "PEACH NUTS MILK TEA, whether it is from the perspective of drinking non-fat milk tea or eating non-greasy nutritious nuts, consumers are able to enjoy an unexpected and promising double benefits of MILK TEA + NUTS which is truly beyond the expectation!",
+          "image": "/assets/img/products/product-nuts.png"
+        },
+        {
+          "key": "desc3",
+          "title": "Nutritional Efficacy",
+          "description": "Nuts are high in unsaturated fatty acids, also consist of about 20% of high quality protein and more than 10 different kinds of amino acids, which are the nutrients that needed by the brain. Other than that, nutrients such as Vitamin B1/B2/B6, Vitamin E, Calcium, Phosphorus, Zinc, Iron, and etc. which can be found from nuts are also beneficial to brain nerve cells. Hence, nuts is a beneficial ingredients that plays an significant role in improving brain nutrition.",
+          "image": "/assets/img/products/nutrition.png"
+        }
+      ],
+      "benefit": {
+        "title": "Benefits of Nut",
+        "items": [
+          {
+            "key": "a",
+            "title": "FIRST",
+            "description": "Unsaturated fatty acids which helps in protecting blood vessels and heart",
+            "image": "/assets/img/products/bloodvessel.jpg"
+          },
+          {
+            "key": "b",
+            "title": "SECOND",
+            "description": "Cellulose in nuts able to prevent diseases such as high blood sugar and diabetes",
+            "image": "/assets/img/products/cellulose.jpg"
+          },
+          {
+            "key": "c",
+            "title": "THIRD",
+            "description": "Promotes blood circulation, and prevent impurities from accumulating in blood vessels",
+            "image": "/assets/img/products/bloodclot2.jpg"
+          },
+          {
+            "key": "d",
+            "title": "FOURTH",
+            "description": "Arginine in nuts able to increase the activity of heart cells to prevent blood clots",
+            "image": "/assets/img/products/bloodclot.jpg"
+          }
+        ]
+      },
+      "suitablePerson": {
+        "title": "Suitable for",
+        "items": [
+          {
+            "key": "1",
+            "title": "FIRST",
+            "description": "SUPEZY Crispy Drink can be replaced the beverages such as milk tea or coffee"
+          },
+          {
+            "key": "2",
+            "title": "SECOND",
+            "description": "People who doesn't like to consume nuts"
+          },
+          {
+            "key": "3",
+            "title": "THIRD",
+            "description": "People who wants to absorb the nutrients of nuts through drinking"
+          },
+          {
+            "key": "4",
+            "title": "FOURTH",
+            "description": "People who have bad teeth and wearing braces and as well as people who doesn't wish to consume hard food."
+          }
+        ]        
+      },
+      "direction":{
+          "title": "Drinking Method",
+          "description": "The package comes with a powdered drink and a granular cereal",
+          "items": [
+            {
+              "key": "first",
+              "title":"Method 1",
+              "items": [
+                {
+                  "key": "a",
+                  "step": "Tear two packets and pour into a cup with 150-180ml of water, soak and drink directly (similar to the way of making rice)"
+                }
+              ]
+            },
+            {
+              "key": "second",
+              "title":"Method 2",
+              "items": [
+                {
+                  "key": "a",
+                  "step": "Tear the packet of powdered beverage and pour into a cup with 150-190ml of water, and take another package of nut grains and consume directly."
+                }
+              ]
+            }
+          ]
+      },
+      "cert":{
+          "title": "Certification",
+          "description": "Our product has been certified by below certification.",
+          "items": [
+            {
+              "key": "a",
+              "title": "马来西亚卫生部认证",
+              "name": "MINISTRY OF HEALTH MALAYSIA CERTIFIED"
+            },
+            {
+              "key": "b",
+              "title": "GMP 优良制造标准生产",
+              "name": "GOOD MANUFACTURING PRACTICE"
+            },
+            {
+              "key": "c",
+              "title": "SGS 国际安全认证",
+              "name": "FOOD SAFETY CERTIFICATION"
+            }
+          ]
+      }
+    },
+    "faq":{
+      "title": "Frequent Asked Questions",
+      "faqs":[
+        {
+          "id": 1,
+          "is_default": true,
+          "group_title": "SUPEZY CRISPY DRINK",
+          "group_items":[
+            {
+              "id": 1,
+              "question": "1.What is SUPEZY CRISPY DRINK?",
+              "answer": "The first healthy milk tea branding in Malaysia, SUPEZY Crispy Drink. Contains 7 sachets of highly nutritious healthy milk tea & 7 sachets of peach oolong crispy cereal"
+            },
+            {
+              "id": 2,
+              "question": "2.Why SUPEZY is healthier？",
+              "answer": "SUPEZY is a healthy milk tea which consists of milk that extracted from 7 variety of nuts and oolong that made from Taiwan."
+            },
+            {
+              "id": 3,
+              "question": "3. Why SUPEZY is your choice?",
+              "answer": "Because it is delicious and healthy, it is individually packaged and easy to carry. You can supplement nutrition & protein anytime, anywhere!\nThe demands of milk tea and the health awareness are getting higher and higher, and everyone said that milk tea was an unhealthy drink which contains of high sugar and calories!\nThis is why we have come out a delicious and low-calories healthy milk tea🥤 (which only consist of 72 kcal) + healthy crispy cereal snack (instead of milk tea's pearl) which can be consumed together with milk tea to bring the crunchy taste from it!"
+            },
+            {
+              "id": 4,
+              "question": "4. How to consume SUPEZY Crispy Drink?",
+              "answer": "It is the best to consume with 150-200ml of cold water!\nIt can also be consumed with 200 ml milks such as Oat Milk or Almond Milk to have a different mix ❤️"
+            },
+            {
+              "id": 5,
+              "question": "5.Features of SUPEZY?",
+              "answer": "SUPEZY CRISPY DRINK is one of the high protein drink that can helps in growth!\nOther than that, crispy cereals are also high in dietary fiber which can help gastrointestinal motility & increase satiety!\nIt contains 7 different types of nuts that can help improve your brain! A healthy drink that suits for the whole family! 🥤"
+            },
+            {
+              "id": 6,
+              "question": "6.Composition of SUPEZY？",
+              "answer": "SUPEZY's healthy milk tea is milk made from 7 kinds of nuts, the ingredients are:\n Almonds, Hazelnuts, Macadamia Nuts, Pecans, Pistachios, Walnuts, Pine Nuts 🥜\n\nPEACH OOLONG CRISPY CEREAL's 6 major ingredients of Crispy Cereals are:\nRice, Corn, Wheat, Barley, Chia seed, Oatmeal"
+            },
+            {
+              "id": 7,
+              "question": "7. Beneficial of SUPEZY?",
+              "answer": "☑️ It is composed of 7 kinds of NUTS from different countries, which can protect the heart & cardiovascular, prevent fat accumulation & can strengthen the brain and replenish the brain! \n☑️ High-protein healthy milk tea\n☑️ Crispy cereals that provide crunchy taste\n☑️ Provide vitamin A,C,E,K \n☑️ High composition of CHIA SEED comes with high fiber that helps in gastrointestinal motility\n☑️ Can be used as a snack for breakfast/dinner/snack time/high tea, 🉑️Increase satiety for more than 3 hours\n☑️ Oolong tea ingredients can helps in break-down the body fat"
+            },
+            {
+              "id": 8,
+              "question": "8.Is SUPEZY a meal replacement?",
+              "answer": "Yes, healthy milk tea with crunchy cereals can increase satiety but healthy milk tea is our main feature. \nIn addition, SUPEZY's Crispy Cereals also contain chia seeds (chiaseed) and oatmeal, which are high in fiber & absorb water to swell in the stomach and achieve satiety."
+            },
+            {
+              "id": 9,
+              "question": "9.Who is SUPEZY suitable for?",
+              "answer": "Everyones, especially pregnant women, breastfeeding mothers, patients with 3-highs, diabetes, and constipation.\nBesides, children may need high quality protein and vitamins that provided by SUPEZY to helps in growth, which can also promote brain and bone development and improve the immunity system. Hence, it was suitable for everyones.\nPregnant women and breastfeeding mothers require a balance diet and nutrients. Some pregnant womens may also experience constipation during pregnancy, so taking SUPEZY with enough water can prevent constipation. \nIn addition, the vitamins and minerals in SUPEZY such as iron and calcium are nutrients that pregnant mothers need and can give the best nutrition to the baby."
+            },
+            {
+              "id": 10,
+              "question": "10.How does SUPEZY helps in stabilize blood sugar and lower the cholesterol?",
+              "answer": "SUPEZY contains oatmeal & chia seeds. Oatmeal is rich in dietary fiber and B-glucan, which can effectively absorb cholesterol/fat in the body and excrete it from the body.\nPrevent the occurrence of cardiovascular disease. Chia seeds are rich in dietary fiber and Omega 3, which can promote metabolism in the body, reduce bad cholesterol and remains good cholesterol, which can prevent cardiovascular and cerebrovascular diseases. \nChia seeds also have the characteristics of swelling after water absorption and high fiber, which can slow down the conversion of starch into sugar in the stomach and stabilize the blood sugar level."
+            },
+            {
+              "id": 11,
+              "question": "11.How does SUPEZY helps in constipation?",
+              "answer": "SUPEZY contains dietary fiber, which has excellent bowel cleansing and detoxification effects. Drinking at least 3L of water a day can promote intestinal peristalsis, expel constipation in the intestines, and also make the skin smooth and rosy, protect the skin, and beautify the skin."
+            },
+            {
+              "id": 12,
+              "question": "12.When to consume SUPEZY?",
+              "answer": "Breakfast, supper, high tea, party, when you crave for snack, you can have a cup of SUPEZY whenever you want to supplement nutrition 🥤 ❤️"
+            },
+            {
+              "id": 13,
+              "question": "13.SUPEZY consist of 1.7g of fats, where does it comes from?",
+              "answer": "SUPEZY contains 7 different types of nuts, these are all fats in the product and are a good source of fats, which can help you lose weight without losing your breasts. \nThe human body needs to consume 44-77 grams of fat per day. A cup of supezy only contains 1.7g of fat, which will definitely not cause obesity."
+            },
+            {
+              "id": 14,
+              "question": "14.Can SUPEZY helps in weight loss?",
+              "answer": "Yes, to lose weight, you must control your daily dietary calorie intake. If you eat a bowl of nasi lemak every morning or high tea with a cup of bubble milk tea, the calories are about 500-600 kcal;\n but if you replace your breakfast, high tea or supper with a cup of SUPEZY (only 72 kcal), the calories will greatly reduced and tt can also relieve cravings. Other than that, it can reduce the daily intake of about 500kcal and also provide required protein, vitamins and fiber. \nOolong tea can help to break-down the fat, and it will have an effective weight management for a long time. Remarks: The product ingredients do not contain any weight loss pills that harm the body 💊❌."
+            },
+            {
+              "id": 15,
+              "question": "15.Certification of SUPEZY?",
+              "answer": "To give everyone the safest experience, our product have been certified by KKM, GMP, SGS national certification, HALAL certification is also in processing! 🤝\nSo, pregnant women, three highs and diabetic patients can use it without any concerns! ❤️"
+            }
+          ]
+        }
+      ]
+    },
+    "contact":{
+      "title":"Distributor List & Feedback Form",
+      "distributorTitle": "Distributor List",
+      "distributors":[
+      {
+        "key": "",
+        "icon": "",
+        "name": "Jason",
+        "position": "Test",
+        "instagram": "smileyx96",
+        "whatsapp": "60187849195"
+      }
+      ],
+      "feedback":{
+        "title": "Feedback Form",
+        "description": "No worries! its anonymous submission!",
+        "input": "Feedback",
+        "button": "Submit"
+      }
+    },
+    "about":{
+      "header":"About SDM Global",
+      "title":"Who we are？",
+      "description":"SDM Global was founded from Snack Distributor Malaysia which specialized in snack distribution. Instead of focus on Malaysia market, we are now expanding to international market!\n\nIn year 2019, we had developed a brand new healthy snack market and import foreign healthy snack into Malaysia to establish a snack distributor that not only provides supply, but also provides professional training.\n\nIn year 2020, our team establish a brand new product, LOVEBITE, the first Internet branding in the snack industry in Malaysia. Our company had achieved monthly sales up to 10,000 cans of LOVEBITE and 20,000 packs of dried fruits.\n\nIn year 2021, the new product SUPEZY CRISPY DRINK, which has been prepared for a whole year, was impacted into market with milk tea and healthy snacks and crispy cereals!",
+      "visionTitle": "Company Vision",
+      "visionDesc": "Snacks could also be healthy! Share more healthy food with people all over the world and become your healthy companion.",
+      "missionTitle": "Company Mission",
+      "missionDesc": "Assist on youngsters who born on 90s or 00s, allow them to start their internet businesses which lead into extraordinary future.",
+      "news": []
     }
   }

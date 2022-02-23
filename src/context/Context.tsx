@@ -6,9 +6,28 @@ interface GlobalState{
     auth: Boolean,
     user: object | null,
     lang: string,
-    error: string | null
+    error: string | null,
+    faq : FAQViewModel | null
 }
+
 interface GlobalContext{ dispatch: React.Dispatch<any>, state: GlobalState }
+
+export interface FAQViewModel{
+  title: string,
+  faqs: Array<FAQGroup>
+}
+
+export interface FAQGroup{
+  id: Number,
+  group_title: string,
+  group_items: Array<FAQ>,
+  is_default: boolean
+}
+ export interface FAQ{
+  id: Number,
+  question: string,
+  answer: string
+}
 
 const GlobalStateContext = createContext({
     state: {
@@ -23,16 +42,23 @@ const GlobalStateProvider = ({
       auth: false,
       lang: "cn",
       user: null,
-      error: null
+      error: null,
+      faq: null
     } as GlobalState,
   }: {
     children: React.ReactNode;
     value?: Partial<GlobalState>;
   }) => {
+    const setFAQObject = ()=>{
+      setState({...state, faq: t("faq", {returnObjects: true})});
+    }
     const [state, setState] = React.useState(value);
     const { t, i18n } = useTranslation();
     React.useEffect(() => {
+      var lng = localStorage.getItem("supezy-lang");
+      if(lng) value.lang = lng;
       i18n.changeLanguage(value.lang);
+      setFAQObject();
     }, []);
     return (
       <GlobalStateContext.Provider value={{ state, setState }}>

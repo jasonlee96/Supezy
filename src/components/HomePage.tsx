@@ -1,30 +1,91 @@
 import "./style/home.css";
-import {TitleLine, TitleEllipse, Button, ImageOverlay, Divider} from './common';
+import {Image, Divider, Background, BackgroundBase} from './common';
 import { Quotes, HomeProduct, Benefit } from './home';
-import { useState } from "react";
-import { Waypoint } from 'react-waypoint';
-import {useSpring, animated as a} from 'react-spring'
+import { useState, useEffect } from "react";
 import { useTranslation, Trans } from 'react-i18next';
+import {HomeViewModel} from '../context/Model';
+import { useGlobalState } from "../context/Context";
+import {JiggleZoom, FadeIn, Shake} from "./animation";
 
 function HomePage() {
     const { t, i18n } = useTranslation();
+    let [home, setHome] = useState<HomeViewModel>();
+    let {state, setState} = useGlobalState();
+    useEffect(() => {
+        initialData();
+      }, []);
+
+    useEffect(() => {
+        initialData();
+    }, [state.lang])
+
+    const initialData = () => {
+        setHome(t("home", {returnObjects: true}));
+    }
+
     return (
       <div className="min-vh-100 bg-main" style={{paddingTop:"4px"}}>
           <div id="carouselExampleControls" className="carousel slide" >
             <div className="carousel-inner home-carousel">
                 <div className="carousel-item active">
+                    <div className="bg-test">
+                        <FadeIn css="position-relative w-100 h-100">
+                            <Background 
+                                image={process.env.PUBLIC_URL + '/assets/img/bg/opa-nuts.png'}
+                                imageStyle={{
+                                width: "700px",
+                                height: "700px",
+                                backgroundSize:"1500px",
+                                backgroundPosition: "bottom",
+                                backgroundRepeat: "no-repeat"
+                                }}
+                                css="w-100 h-100">
+                                    <FadeIn delay={2500} css="position-relative w-100 h-100">
+                                    <Background 
+                                        image={process.env.PUBLIC_URL + '/assets/img/bg/cherry.png'}
+                                        imageStyle={{
+                                            width: "700px",
+                                        height: "700px",
+                                        backgroundSize:"250px",
+                                        backgroundPosition: "right bottom",
+                                        backgroundRepeat: "no-repeat",
+                                        display: "flex"
+                                        }}
+                                        css="w-100 h-100">
+                                            <FadeIn delay={3500} css="position-relative w-100 h-100">
+                                            <Background 
+                                                image={process.env.PUBLIC_URL + '/assets/img/bg/cherry.png'}
+                                                imageStyle={{
+                                                width: "700px",
+                                                height: "700px",
+                                                backgroundSize:"250px",
+                                                backgroundPosition: "100px 100px",
+                                                backgroundRepeat: "no-repeat"
+                                                }}
+                                                css="w-100 h-100">
+                                                <FadeIn delay={4500} css="position-relative w-100 h-100 d-flex justify-content-center align-items-center">    
+                                                <BackgroundBase color="#FEC5BB" imageStyle={{
+                                                    maxWidth: "600px",
+                                                    maxHeight: "600px",
+                                                    margin: "auto"
+                                                }}>
+                                                <FadeIn delay={5500} css="position-relative w-100 h-100">
+                                                    <Shake>  
+                                                    <Image image={process.env.PUBLIC_URL + '/assets/img/products/SDM_3.png'} imageStyle={{
 
-                        <div className="bg-test">
-                        </div>
- 
-                </div>
-                <div className="carousel-item">
+                                                    }} css=""></Image>
+                                                    </Shake>
+                                                </FadeIn>
+                                                </BackgroundBase>
+                                                </FadeIn>
+                                            </Background>
+                                            </FadeIn>
+                                    </Background>
+                                    </FadeIn>
+                                </Background>
 
-                <img className="d-block w-100 home-carousel-item" src={process.env.PUBLIC_URL + '/assets/img/img2.jpg'} alt="Second slide" />
-
-                </div>
-                <div className="carousel-item">
-                <img className="d-block w-100 home-carousel-item" src={process.env.PUBLIC_URL + '/assets/img/img3.jpg'} alt="Third slide" />
+                        </FadeIn>      
+                    </div>
                 </div>
             </div>
             <button className="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="prev">
@@ -40,8 +101,8 @@ function HomePage() {
         <Divider />
 
         <section id="quoteSection">
-            <Quotes title={t("home.quotes.title")} author={t("home.quotes.author")}>
-                <div className="fs-4">
+            <Quotes title={t("home.quotes.title", "")} author={t("home.quotes.author")}>
+                <div className="spz-large-font cn-sp-font letter-space">
                     “{t("home.quotes.description")}”
                 </div>
             </Quotes>
@@ -50,13 +111,13 @@ function HomePage() {
         <Divider />
 
         <section id="productSection" >
-            <HomeProduct />
+            <HomeProduct header={home?.product.header ?? ""} title={home?.product.title ?? ""} description={home?.product.description ?? ""} href={home?.product.href ?? ""} buttonText={home?.product.buttonText ?? ""}/>
         </section>
 
         <Divider />
         
         <section id="benefitSection"  className="pb-5 mb-5">
-            <Benefit />
+            <Benefit benefit={home?.benefit}/>
         </section>
          </div>
     );

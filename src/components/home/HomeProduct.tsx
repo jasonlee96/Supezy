@@ -1,23 +1,42 @@
-import {TitleLine, Button} from "../common";
-function HomeProduct() {
+import {TitleLine, Button, Image, BackgroundBase} from "../common";
+import {SlideIn, JiggleZoom, Shake, FadeIn} from "../animation";
+
+function HomeProduct({header, title, description, href, buttonText}:{
+  header: string,
+  title: string,
+  description: string,
+  href: string,
+  buttonText: string
+}) {
     return (
       <div className="bg-main-pink-0">
         <div className="py-5">
-            <TitleLine title="Our Products" customTextCss="text-main" lineCss="bg-main-dark" />
+            <TitleLine title={header} customTextCss="text-main" lineCss="bg-main-dark" />
         </div>
-            <div className="d-flex flex-row py-4" style={{minHeight: "800px"}}>
-                  <div className=" col-md-7">
-                    
+            <div className="row py-md-4 py-0 w-100 mx-0" style={{minHeight: "600px"}}>
+                  <div className=" col-md-7 col-12 order-last order-md-first">
+                    <SlideIn isLeft={true}>
                     <div className=" mx-auto text-center d-flex flex-column h-100" style={{maxWidth: "600px"}}>
-                      <div className="fs-1 fw-bolder py-4">Title</div>
-                      <div className="text-sub-main fs-6 py-4">Lorem ipsum dolor sit amet consectetur adipisicing elit. Magnam, nam rem eum perferendis veritatis, obcaecati aut reprehenderit fuga placeat illum quis aperiam id consequuntur iusto eos at nemo exercitationem earum.</div>
+                      <div className="spz-title fw-bolder py-4">{title}</div>
+                      <div className="text-sub-main spz-description py-4">
+                        {description}
+                      </div>
                       <div className="mt-auto py-4">
-                        <Button customCss="text-white bg-main-dark btn-hover-main" href="#" text="View Product"/>
+                        <Button customCss="text-white bg-main-dark btn-hover-main w-75 w-sm-50" alignCss="justify-content-center " href={process.env.PUBLIC_URL + href} text={buttonText}/>
                       </div>
                     </div>
+                    </SlideIn>
                   </div>
-                  <div className="bg-main col-md-5">
-                    <div className="float-end bg-main-pink-0">Test</div>
+                  <div className="bg-main col-md-5 col-12 order-first order-md-last">
+                    <SlideIn isLeft={false}>
+                    <div className="float-end bg-main-pink-0 mx-3">
+                        <BackgroundBase color="#FEC5BB">
+                          <JiggleZoom>
+                          <Image image={process.env.PUBLIC_URL + '/assets/img/products/SDM_3.png'} css="w-100 h-100"></Image>
+                          </JiggleZoom>
+                        </BackgroundBase>
+                    </div>
+                    </SlideIn>
                   </div>
               </div>
          </div>

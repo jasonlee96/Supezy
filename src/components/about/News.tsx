@@ -1,6 +1,9 @@
 import { ImageOverlay, Button } from "../common";
-
-function News() {
+import { AboutUsNewViewModel} from "../../context/Model";
+function News({news}:{
+    news?: Array<AboutUsNewViewModel>
+}) {
+    if(news != null && news.length > 0){
     return (
       <div className="py-4 w-100">
          <div className="bg-main-pink-0 py-5 text-center w-100 d-flex flex-column text-main">
@@ -23,6 +26,10 @@ function News() {
             </div>
         </div>
     );
+    }
+    else{
+        return (<></>);
+    }
   }
   
   export default News;
