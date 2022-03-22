@@ -52,6 +52,37 @@
             "description": ""
           }
         ]
+      },
+      "whySupezy":{
+        "header":"Why SUPEZY?",
+        "description": "Our product have 5 key features whereby we are able to serve you the healthiest milk tea in the world!",
+        "items":[
+          {
+            "key":"1",
+            "icon": "/assets/img/home/food.png",
+            "description" : "Improve Satiety"
+          },
+          {
+            "key":"2",
+            "icon": "/assets/img/home/nutrition.png",
+            "description" : "Replenish Nutrition"
+          },
+          {
+            "key":"3",
+            "icon": "/assets/img/home/safe.png",
+            "description" : "Natural & Safe"
+          },
+          {
+            "key":"4",
+            "icon": "/assets/img/home/workout.png",
+            "description" : "Fat Loss"
+          },
+          {
+            "key":"5",
+            "icon": "/assets/img/home/healthy.png",
+            "description" : "Healthy Drinks"
+          }
+        ]
       }
     },
     "product": {
@@ -180,26 +211,30 @@
         ]
       },
       "suitablePerson": {
-        "title": "Suitable for",
+        "title": "Our Product is suitable for",
         "items": [
           {
             "key": "1",
             "title": "FIRST",
+            "icon": "/assets/img/icon/icon1.png",
             "description": "SUPEZY Crispy Drink can be replaced the beverages such as milk tea or coffee"
           },
           {
             "key": "2",
             "title": "SECOND",
+            "icon": "/assets/img/icon/icon3.png",
             "description": "People who doesn't like to consume nuts"
           },
           {
             "key": "3",
             "title": "THIRD",
+            "icon": "/assets/img/icon/icon2.png",
             "description": "People who wants to absorb the nutrients of nuts through drinking"
           },
           {
             "key": "4",
             "title": "FOURTH",
+            "icon": "/assets/img/icon/icon4.png",
             "description": "People who have bad teeth and wearing braces and as well as people who doesn't wish to consume hard food."
           }
         ]        
@@ -250,6 +285,65 @@
               "name": "FOOD SAFETY CERTIFICATION"
             }
           ]
+      },
+      "nutritionFact":{
+        "header": "Nutrition Fact",
+        "col1": "PER 20g",
+        "col2": "PER 100g",
+        "nutritions": [
+          {
+            "key": "1",
+            "name": "Energy",
+            "col1": "72",
+            "col2": "358",
+            "unit": "kcal"
+          },
+          {
+            "key": "2",
+            "name": "Carbohydrate",
+            "col1": "10.5",
+            "col2": "52.7",
+            "unit": "g"
+          },
+          {
+            "key": "3",
+            "name": "Protein",
+            "col1": "3.5",
+            "col2": "17.7",
+            "unit": "g"
+          },
+          {
+            "key": "4",
+            "name": "Fat",
+            "col1": "1.7",
+            "col2": "8.5",
+            "unit": "g"
+          },
+          {
+            "key": "5",
+            "name": "Total Sugar",
+            "col1": "2.6",
+            "col2": "13.2",
+            "unit": "g"
+          }
+        ]
+      },
+      "report":{
+        "header": "Test Report",
+        "images":[
+          {
+            "url":"/assets/img/products/0001.jpg",
+            "key":"1"
+          }, 
+          {
+            "url":"/assets/img/products/0002.jpg",
+            "key":"2"
+          },
+          {
+            "url":"/assets/img/products/0003.jpg",
+            "key":"3"
+          }
+        ]
       }
     },
     "faq":{
@@ -343,20 +437,96 @@
       "title":"Distributor List & Feedback Form",
       "distributorTitle": "Distributor List",
       "distributors":[
-      {
-        "key": "",
-        "icon": "",
-        "name": "Jason",
-        "position": "Test",
-        "instagram": "smileyx96",
-        "whatsapp": "60187849195"
-      }
-      ],
+        {
+          "key": "",
+          "icon": "",
+          "name": "Jason",
+          "position": "Test",
+          "instagram": "smileyx96",
+          "whatsapp": "60187849195"
+        },
+        {
+          "key": "",
+          "icon": "",
+          "name": "Jason",
+          "position": "Test",
+          "instagram": "smileyx96",
+          "whatsapp": "60187849195"
+        },
+        {
+          "key": "",
+          "icon": "",
+          "name": "Jason",
+          "position": "Test",
+          "instagram": "smileyx96",
+          "whatsapp": "60187849195"
+        },
+        {
+          "key": "",
+          "icon": "",
+          "name": "Jason",
+          "position": "Test",
+          "instagram": "smileyx96",
+          "whatsapp": "60187849195"
+        },
+        {
+          "key": "",
+          "icon": "",
+          "name": "Jason",
+          "position": "Test",
+          "instagram": "smileyx96",
+          "whatsapp": "60187849195"
+        },
+        {
+          "key": "",
+          "icon": "",
+          "name": "Jason",
+          "position": "Test",
+          "instagram": "smileyx96",
+          "whatsapp": "60187849195"
+        },
+        {
+          "key": "",
+          "icon": "",
+          "name": "Jason",
+          "position": "Test",
+          "instagram": "smileyx96",
+          "whatsapp": "60187849195"
+        },
+        {
+          "key": "",
+          "icon": "",
+          "name": "Jason",
+          "position": "Test",
+          "instagram": "smileyx96",
+          "whatsapp": "60187849195"
+        },
+        {
+          "key": "",
+          "icon": "",
+          "name": "Jason",
+          "position": "Test",
+          "instagram": "smileyx96",
+          "whatsapp": "60187849195"
+        }
+        ],
       "feedback":{
         "title": "Feedback Form",
         "description": "No worries! its anonymous submission!",
         "input": "Feedback",
-        "button": "Submit"
+        "button": "Submit",
+        "validationMsg": "Feedback cannot be empty！",
+        "successMsg": "Email was sent successfully. will be redirect in {second} seconds..."
+      },
+      "contact":{
+        "header": "Contact Us!",
+        "description": "You may contact us via email, whatsapp or phone call! We will get back to you within 24 hours！",
+        "whatsapp": "+60187849195",
+        "email": "sdm.global2021@gmail.com",
+        "contactno": "+60187849195",
+        "whatsappTitle": "Whatsapp",
+        "contactTitle": "Contact No.",
+        "emailTitle": "Email"
       }
     },
     "about":{

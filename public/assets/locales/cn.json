@@ -52,6 +52,37 @@
             "description": ""
           }
         ]
+      },
+      "whySupezy":{
+        "header":"为什么选择SUPEZY?",
+        "description": "我们的产品有 5 个主要特点，我们能够为您提供世界上最健康的奶茶！",
+        "items":[
+          {
+            "key":"1",
+            "icon": "/assets/img/home/food.png",
+            "description" : "解馋耐饱"
+          },
+          {
+            "key":"2",
+            "icon": "/assets/img/home/nutrition.png",
+            "description" : "补充营养"
+          },
+          {
+            "key":"3",
+            "icon": "/assets/img/home/safe.png",
+            "description" : "天然安全"
+          },
+          {
+            "key":"4",
+            "icon": "/assets/img/home/workout.png",
+            "description" : "减脂功效"
+          },
+          {
+            "key":"5",
+            "icon": "/assets/img/home/healthy.png",
+            "description" : "喝出健康"
+          }
+        ]
       }
     },
     "product": {
@@ -175,26 +206,30 @@
         ]
       },
       "suitablePerson": {
-        "title": "适用人群",
+        "title": "SUPEZY适用人群",
         "items": [
           {
             "key": "1",
             "title": "FIRST",
+            "icon": "/assets/img/icon/icon1.png",
             "description": "选择用本产品来代替饮料， 如奶茶或咖啡"
           },
           {
             "key": "2",
             "title": "SECOND",
+            "icon": "/assets/img/icon/icon3.png",
             "description": "不喜欢吃坚果的人士"
           },
           {
             "key": "3",
             "title": "THIRD",
+            "icon": "/assets/img/icon/icon2.png",
             "description": "希望通过和的方式吸取坚果的营养的人士"
           },
           {
             "key": "4",
             "title": "FOURTH",
+            "icon": "/assets/img/icon/icon4.png",
             "description": "牙齿不好及绑牙者， 不适合吃硬食者"
           }
         ]        
@@ -245,6 +280,65 @@
               "name": "FOOD SAFETY CERTIFICATION"
             }
           ]
+      },
+      "nutritionFact":{
+        "header": "营养含量",
+        "col1": "每20g",
+        "col2": "每100g",
+        "nutritions": [
+          {
+            "key": "1",
+            "name": "能量",
+            "col1": "72",
+            "col2": "358",
+            "unit": "kcal"
+          },
+          {
+            "key": "2",
+            "name": "淡水化合物",
+            "col1": "10.5",
+            "col2": "52.7",
+            "unit": "g"
+          },
+          {
+            "key": "3",
+            "name": "蛋白质",
+            "col1": "3.5",
+            "col2": "17.7",
+            "unit": "g"
+          },
+          {
+            "key": "4",
+            "name": "脂肪",
+            "col1": "1.7",
+            "col2": "8.5",
+            "unit": "g"
+          },
+          {
+            "key": "5",
+            "name": "糖",
+            "col1": "2.6",
+            "col2": "13.2",
+            "unit": "g"
+          }
+        ]
+      },
+      "report":{
+        "header": "检验报告",
+        "images":[
+          {
+            "url":"/assets/img/products/0001.jpg",
+            "key":"1"
+          }, 
+          {
+            "url":"/assets/img/products/0002.jpg",
+            "key":"2"
+          },
+          {
+            "url":"/assets/img/products/0003.jpg",
+            "key":"3"
+          }
+        ]
       }
     },
     "faq":{
@@ -345,13 +439,89 @@
         "position": "Test",
         "instagram": "smileyx96",
         "whatsapp": "60187849195"
+      },
+      {
+        "key": "",
+        "icon": "",
+        "name": "Jason",
+        "position": "Test",
+        "instagram": "smileyx96",
+        "whatsapp": "60187849195"
+      },
+      {
+        "key": "",
+        "icon": "",
+        "name": "Jason",
+        "position": "Test",
+        "instagram": "smileyx96",
+        "whatsapp": "60187849195"
+      },
+      {
+        "key": "",
+        "icon": "",
+        "name": "Jason",
+        "position": "Test",
+        "instagram": "smileyx96",
+        "whatsapp": "60187849195"
+      },
+      {
+        "key": "",
+        "icon": "",
+        "name": "Jason",
+        "position": "Test",
+        "instagram": "smileyx96",
+        "whatsapp": "60187849195"
+      },
+      {
+        "key": "",
+        "icon": "",
+        "name": "Jason",
+        "position": "Test",
+        "instagram": "smileyx96",
+        "whatsapp": "60187849195"
+      },
+      {
+        "key": "",
+        "icon": "",
+        "name": "Jason",
+        "position": "Test",
+        "instagram": "smileyx96",
+        "whatsapp": "60187849195"
+      },
+      {
+        "key": "",
+        "icon": "",
+        "name": "Jason",
+        "position": "Test",
+        "instagram": "smileyx96",
+        "whatsapp": "60187849195"
+      },
+      {
+        "key": "",
+        "icon": "",
+        "name": "Jason",
+        "position": "Test",
+        "instagram": "smileyx96",
+        "whatsapp": "60187849195"
       }
       ],
       "feedback":{
         "title": "提交产品回馈",
         "description": "不用担心！ 这是匿名提交哟",
         "input": "回馈",
-        "button": "提交"
+        "button": "提交",
+        "validationMsg": "回馈不能为空！",
+        "successMsg": "邮件已寄出，会在{second}秒后更新页面"
+      },
+      "contact":{
+        "header": "联络我们",
+        "description": "您可以通过邮件，Whatsapp，或者联络号码联络我们！我们会在24小时内回复您！",
+        "whatsapp": "+60187849195",
+        "email": "sdm.global2021@gmail.com",
+        "contactno": "+60187849195",
+        "whatsappTitle": "Whatsapp",
+        "contactTitle": "联络号码",
+        "emailTitle": "邮件"
       }
     },
     "about":{

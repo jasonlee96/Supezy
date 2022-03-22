@@ -52,10 +52,10 @@ function IngredientList({header, ingredients}:
 
     return (
       <div className="pt-5 d-flex flex-column justify-content-center bg-main-dark">
-          <div className="p-0 p-md-5 mx-5">
+          <div className="p-0 p-md-5 pb-md-0 pb-0 mx-5">
               <div className="text-white fs-1 fw-bolder text-uppercase">{header}</div>
           </div>
-          <div className="py-5">
+          <div className="py-0">
             <Splide
             onVisible={splideUpdated}
             onMoved={splideMoved}

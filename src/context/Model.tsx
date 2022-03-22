@@ -11,15 +11,27 @@ export interface ProductViewModel{
     direction: Direction,
     suitablePerson: SuitablePerson,
     benefit: ProductBenefit,
-    productDetail: Array<ProductDesc>
+    productDetail: Array<ProductDesc>,
+    nutritionFact: NutritionFact,
+    report: TestReports
 }
 
 export interface HomeViewModel{
     quote: Quote,
     product: HomeProductViewModel,
-    benefit: HomeBenefitViewModel
+    benefit: HomeBenefitViewModel,
+    whySupezy: WhySupezyViewModel
 }
-
+interface WhySupezyViewModel{
+    header: string,
+    description: string,
+    items: Array<WhySupezyItem>
+}
+interface WhySupezyItem{
+    key: string,
+    icon: string,
+    description:string
+}
 interface Quote{
     title?: string,
     description: string,
@@ -75,6 +87,7 @@ interface SuitablePerson{
 
 interface SuitablePersonItem{
     title: string,
+    icon: string,
     description: string,
     key: string
 }
@@ -107,19 +120,56 @@ interface Cert{
     name: string
 }
 
+export interface NutritionFact{
+    header:string,
+    col1: string,
+    col2: string,
+    nutritions: Array<Nutrition>
+}
+
+interface Nutrition{
+    key: string,
+    name: string,
+    col1: string,
+    col2: string,
+    unit: string
+}
+
+export interface TestReports{
+    header: string,
+    images: Array<TestReport>
+}
+interface TestReport{
+    key: string,
+    url: string
+}
+
 export interface Contact{
     title: string,
     distributorTitle: string,
     distributors: Array<Distributor>,
-    feedback: Feedback
+    feedback: Feedback,
+    contact: ContactBody
 }
 export interface Feedback{
     title: string,
     description: string,
     input: string,
-    button: string
+    button: string,
+    validationMsg: string,
+    successMsg:string
 }
 
+export interface ContactBody{
+    header:string,
+    description: string,
+    email: string,
+    contactno: string,
+    whatsapp: string,
+    whatsappTitle: string,
+    contactTitle: string,
+    emailTitle: string
+}
 interface Distributor{
     key: string,
     name: string,

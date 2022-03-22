@@ -1,4 +1,4 @@
-import {TitleLine, TitleEllipse, Button, ImageOverlay, Divider, Image} from './common';
+import {TitlePage, TitleEllipse, Button, ImageOverlay, Divider, Image} from './common';
 import { News } from "./about";
 import { useTranslation, Trans } from 'react-i18next';
 import {AboutViewModel} from '../context/Model';
@@ -20,9 +20,11 @@ function AboutUs(){
         setAbout(t("about", {returnObjects: true}));
     }
     return(
-        <div className="min-vh-100 bg-main" style={{paddingTop:"11px"}}>
-            <ImageOverlay title={about?.header ?? ""} image={process.env.PUBLIC_URL + '/assets/img/bg/banner.jpg'} customCss="align-items-center">
-            </ImageOverlay>
+        <div className="min-vh-100 bg-main" style={{paddingTop:"48px"}}>
+            <TitlePage title={about?.header ?? ""}></TitlePage>
+            
+            {/* <ImageOverlay title={about?.header ?? ""} image={process.env.PUBLIC_URL + '/assets/img/bg/banner.jpg'} customCss="align-items-center">
+            </ImageOverlay> */}
             
             <section id="aboutSection" className="bg-main-pink-0 pb-5">
                 <div className="bg-white py-5 text-center w-100 d-flex flex-column text-black">
@@ -30,7 +32,7 @@ function AboutUs(){
                     <div className="fs-1 fw-bolder py-4">{about?.title ?? ""}</div>
                     </SlideIn>
                     <SlideIn isLeft={false}>
-                    <div className="fs-4 py-4 w-50 mx-auto pre-lines">
+                    <div className="fs-4 py-4 col-12 col-sm-6 px-3 px-sm-0 mx-auto pre-lines">
                         {about?.description ?? ""}
                     </div>
                     </SlideIn>
@@ -52,7 +54,7 @@ function AboutUs(){
                             </SlideIn>
                         </div>
                         
-                        <div className="col-lg-5 col-12  order-lg-last order-first d-flex align-items-center align-items-lg-end">
+                        <div className="col-lg-5 col-12  order-lg-last order-first d-flex justify-content-lg-end justify-content-center align-items-center align-items-lg-end">
                             <SlideIn isLeft={false}>
                             <Image image={process.env.PUBLIC_URL + '/assets/img/about/IMG_7698.JPEG'} css="mx-auto" imageStyle={{height: "650px", marginTop:"-200px", width:"389px", objectFit: "cover"}}></Image>
                             </SlideIn>

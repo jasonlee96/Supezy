@@ -1,11 +1,11 @@
 import "./style/home.css";
-import {Image, Divider, Background, BackgroundBase} from './common';
+import {Image, Divider, Background, BackgroundBase, InLineComponent} from './common';
 import { Quotes, HomeProduct, Benefit } from './home';
 import { useState, useEffect } from "react";
 import { useTranslation, Trans } from 'react-i18next';
 import {HomeViewModel} from '../context/Model';
 import { useGlobalState } from "../context/Context";
-import {JiggleZoom, FadeIn, Shake} from "./animation";
+import {JiggleZoom, FadeIn, Shake, SlideIn} from "./animation";
 
 function HomePage() {
     const { t, i18n } = useTranslation();
@@ -115,10 +115,24 @@ function HomePage() {
         </section>
 
         <Divider />
-        
+        <InLineComponent title={home?.whySupezy.header ?? ""} subtitle={home?.whySupezy.description ?? ""} titleCss="text-black" color="">
+            {home?.whySupezy.items.map(item => 
+                <SlideIn>
+                    <div className="mx-lg-2 mx-auto px-2" style={{minWidth: "200px", maxWidth: "250px"}}>
+                    <div className="text-center py-4 rounded">
+                        <Image image={process.env.PUBLIC_URL + item.icon ?? ""} css={"d-flex mx-auto "} />
+                        </div>
+                    <div className="text-center text-main fw-bold fs-5 py-3">{item.description}</div>
+                    </div>
+                </SlideIn>    
+            )}
+                
+
+            </InLineComponent>
+            {/* <Divider/>
         <section id="benefitSection"  className="pb-5 mb-5">
             <Benefit benefit={home?.benefit}/>
-        </section>
+        </section> */}
          </div>
     );
   }

@@ -6,6 +6,7 @@ interface GlobalState{
     auth: Boolean,
     user: object | null,
     lang: string,
+    isLoad: Boolean,
     error: string | null,
     faq : FAQViewModel | null
 }
@@ -41,6 +42,7 @@ const GlobalStateProvider = ({
     value = {
       auth: false,
       lang: "cn",
+      isLoad: false,
       user: null,
       error: null,
       faq: null

@@ -1,4 +1,4 @@
-import { ImageOverlay, Button } from "./common";
+import { TitlePage, ImageOverlay, Button } from "./common";
 import { FAQGroups, FAQNav } from "./faqs";
 import {useEffect, useState, useLayoutEffect} from "react";
 import $ from "jquery";
@@ -19,9 +19,10 @@ function FAQ() {
         setState({...state, faq: t("faq", { returnObjects: true })});
       }, [state.lang]);
     return (
-        <div className="min-vh-100 bg-main" style={{paddingTop:"11px"}}>
-        <ImageOverlay title={state.faq?.title ?? "FAQ"} image={process.env.PUBLIC_URL + '/assets/img/bg/banner.jpg'} customCss="align-items-center">
-        </ImageOverlay>
+        <div className="min-vh-100 bg-main" style={{paddingTop:"48px"}}>
+        <TitlePage title={state.faq?.title ?? "FAQ"}></TitlePage>
+        {/* <ImageOverlay title={state.faq?.title ?? "FAQ"} image={process.env.PUBLIC_URL + '/assets/img/bg/banner.jpg'} customCss="align-items-center">
+        </ImageOverlay> */}
         <section id="FAQ">
             <div className="container my-5 bg-main-pink-0">
                 <FAQNav groups={state.faq?.faqs}/>

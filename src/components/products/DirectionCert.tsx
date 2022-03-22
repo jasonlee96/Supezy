@@ -39,11 +39,13 @@ function DirectionCert({direction, cert}:{
 
             <div className="col-12 col-lg-4 bg-cust-cert px-5 order-2 order-lg-2">
                 <div className="m-auto" style={{maxWidth: "500px"}}>
-                    <Shake>
+                    
                             <BackgroundBase css="" color="#D8E2DC">
+                            <Shake>
                           <Image image={process.env.PUBLIC_URL + '/assets/img/products/SDM_6.png'} css="w-100 h-100"></Image>
-                          </BackgroundBase>
                           </Shake>
+                          </BackgroundBase>
+                          
                 </div>
             </div>
 

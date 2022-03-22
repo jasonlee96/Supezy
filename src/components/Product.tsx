@@ -1,5 +1,5 @@
-import {TitleLine, TitleEllipse, Button, ImageOverlay, Divider, Image,BackgroundBase, Background} from './common';
-import { GeneralContent, BenefitItem, IngredientList, NotePad, DirectionCert } from './products';
+import {TitleLine, TitleEllipse, TitlePage, ImageOverlay, Divider, Image,BackgroundBase, Background, InLineComponent} from './common';
+import { GeneralContent, BenefitItem, IngredientList, NotePad, DirectionCert, Nutrition, TestReport } from './products';
 import { useTranslation, Trans } from 'react-i18next';
 import {ProductViewModel, Benefit} from '../context/Model';
 import {useState, useEffect} from 'react';
@@ -31,22 +31,25 @@ function Product() {
     }, [product?.benefit]);
   // position: sticky / Parallax component
     return (
-      <div className="min-vh-100 bg-main" style={{paddingTop:"11px"}}>
-            <ImageOverlay title={product?.header ?? ""} image={process.env.PUBLIC_URL + '/assets/img/bg/banner.jpg'} customCss="align-items-center">
+      <div className="min-vh-100 bg-main" style={{paddingTop:"48px", overflowX: "clip"}}>
+            <TitlePage title={product?.header ?? ""}></TitlePage>
+            {/* <ImageOverlay title={product?.header ?? ""} image={process.env.PUBLIC_URL + '/assets/img/bg/banner.jpg'} customCss="align-items-center">
             </ImageOverlay>
             <Divider></Divider>
-            
+             */}
             <section id="productDetailSection" className="bg-main-pink-0 pb-5">
                 <div className="row w-100 mx-0">
                     <div className="col-12 col-md-4 p-0 my-3">
                         
                         <div className="product-sticky mx-auto my-3">
                         <SlideIn isLeft={true}>
-                          <Shake>
+                          
                         <BackgroundBase css="" color="#FEC5BB">
+                          <Shake>
                           <Image image={process.env.PUBLIC_URL + '/assets/img/products/SDM_1.png'} css="w-100 h-100"></Image>
-                          </BackgroundBase>
                           </Shake>
+                          </BackgroundBase>
+                          
                           </SlideIn>
                         </div>
                         
@@ -64,7 +67,7 @@ function Product() {
                         }}
                       >
                         <SlideIn>
-                      <div className="text-center py-5" id="mainProductDescription">
+                      <div className="text-center" id="mainProductDescription">
                             <div className="spz-title fw-bold py-5">{product?.productName ?? ""}</div>
                             <div className="spz-description pb-5 px-5 mx-lg-5">
                             {product?.productDescription ?? ""}
@@ -91,7 +94,20 @@ function Product() {
 
             <Divider />
             
-            <section id="productBenefitSection" className="bg-main-light-pink py-5">
+            <InLineComponent title={product?.benefit.title ?? ""} color="#F8EDEB" titleCss="text-dark">
+                {left.map(item => 
+                  <SlideIn isLeft={true} key={item.key}>
+                    <BenefitItem title={item.title} description={item.description} key={item.key} image={process.env.PUBLIC_URL + item.image}></BenefitItem>
+                    </SlideIn>
+                  )}  
+                  {right.map(item => 
+                    <SlideIn key={item.key}>
+                      <BenefitItem title={item.title} description={item.description} key={item.key} image={process.env.PUBLIC_URL +item.image}></BenefitItem>
+                      </SlideIn>
+                    )}
+            </InLineComponent>
+
+            {/* <section id="productBenefitSection" className="bg-main-light-pink py-5">
               <div className="row d-flex justify-content-center col-12">
                 <div className="col-12 col-md-4 order-md-1 order-2">
                     <div className="d-flex flex-column justify-content-between h-100 align-items-center">
@@ -113,13 +129,25 @@ function Product() {
                     </div>
                 </div>
               </div>
-            </section>
+            </section> */}
 
             <section id="productIngredientSection">
               <IngredientList header={product?.ingredientHeader ?? ""} ingredients={product?.ingredients ?? []} />
             </section>
 
-            <section id="suitableForSection">
+            <InLineComponent title={product?.suitablePerson.title ?? ""} titleCss="text-main" color="">
+              {product?.suitablePerson.items.map((item, idx) => 
+                <SlideIn key={item.key}>
+                    <div className="mx-lg-2 mx-auto px-2" style={{minWidth: "200px", maxWidth: "250px"}}>
+                      <div className="text-center py-4 rounded">
+                          <Image image={process.env.PUBLIC_URL + item.icon ?? ""} css={"d-flex mx-auto "} />
+                        </div>
+                      <div className="text-center text-main fw-bold fs-5 py-3">{item.description}</div>
+                    </div>
+                </SlideIn>
+              )}
+            </InLineComponent>
+            {/* <section id="suitableForSection">
                 <div className="row w-100 mx-0">
                   <div className="col-12 col-md-4 p-0 d-flex flex-column">
                     
@@ -148,11 +176,20 @@ function Product() {
                       )}
                   </div>
                 </div>
-              </section>
+              </section> */}
+            <Divider/>
+
+            <section id="productNutrition">
+              <Nutrition nutrition={product?.nutritionFact}></Nutrition>
+            </section>
             <Divider/>
 
             <section id="directionAndCert">
               <DirectionCert direction={product?.direction} cert={product?.cert}></DirectionCert>
+            </section>
+
+            <section id="testReport">
+              <TestReport report={product?.report}></TestReport>
             </section>
         </div>
     );

@@ -13,6 +13,7 @@ import i18n from './i18n.js';
 import { useTranslation, I18nextProvider } from 'react-i18next';
 
 const basename = "/lianghao";
+
 ReactDOM.render(
   <React.StrictMode>
     <I18nextProvider i18n={i18n}>

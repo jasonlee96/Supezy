@@ -1,0 +1,54 @@
+.report-splide .splide__slide.is-active .report-item{
+    transform: scale(1.1);
+}
+
+.report-splide .splide__slide .report-item{
+    transform: scale(0.9);
+    transition: 0.4s linear;
+}
+
+.report-slide{
+   position:relative;
+   width: 500px !important;
+   height: 800px !important;
+   margin-left: 3.6rem !important;
+   margin-right: 3.6rem !important;
+}
+
+@media (max-width: 800px) { 
+
+    .report-slide{
+        position:relative;
+        width:400px !important;
+        height:700px !important;
+        margin-left: 1.5rem !important;
+        margin-right: 1.5rem !important;
+     }
+   }
+
+   @media (max-width: 600px) { 
+
+    .report-slide{
+        position:relative;
+        width:300px !important;
+        height:500px !important;
+        margin-left: 1rem !important;
+        margin-right: 1rem !important;
+     }
+   }
+
+   @media (max-width: 400px) { 
+
+    .report-slide{
+        position:relative;
+        width:300px !important;
+        height:500px !important;
+        margin-left: 0.25rem !important;
+        margin-right: 0.25rem !important;
+     }
+   }
+
+.splide__track{
+    padding: 100px 0;
+}
+
