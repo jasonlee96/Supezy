@@ -98,7 +98,7 @@ function FeedbackForm({feedback, contact}:{
                             </div>
                             <div className="d-flex flex-column my-3">
                                 <div className="spz-description"><i className="fab fa-whatsapp" aria-hidden="true"></i> <span className="px-3">{contact?.whatsappTitle ?? ""}</span></div>
-                                <div className="spz-description py-3"><div className="bg-sub-main  shadow col-xl-8 col-lg-10 col-8 mx-auto" style={{borderRadius:"25px"}}><a className="btn w-100 py-3 text-white" href={"https://wa.me/"+ (contact?.whatsapp ?? "")+"/?text=Hi,%20I%20have%20queries%20regarding%20to%20SUPEZY%20product%2E"}>+60187849195</a></div></div>
+                                <div className="spz-description py-3"><div className="bg-sub-main  shadow col-xl-8 col-lg-10 col-8 mx-auto" style={{borderRadius:"25px"}}><a className="btn w-100 py-3 text-white" href={"https://wa.me/"+ (contact?.whatsapp ?? "")+"/?text=Hi,%20I%20have%20queries%20regarding%20to%20SUPEZY%20product%2E"}>+65xxxxxxx</a></div></div>
                             </div>
                             <div className="d-flex flex-column my-3">
                                 <div className="spz-description"><i className="fa fa-phone" aria-hidden="true"></i> <span className="px-3">{contact?.contactTitle ?? ""}</span></div>
