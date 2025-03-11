@@ -1,27 +1,27 @@
 {
   "files": {
-    "main.css": "/lianghao/static/css/main.11f0f598.chunk.css",
-    "main.js": "/lianghao/static/js/main.be68a396.chunk.js",
-    "main.js.map": "/lianghao/static/js/main.be68a396.chunk.js.map",
-    "runtime-main.js": "/lianghao/static/js/runtime-main.a7d9375d.js",
-    "runtime-main.js.map": "/lianghao/static/js/runtime-main.a7d9375d.js.map",
-    "static/css/2.e8621165.chunk.css": "/lianghao/static/css/2.e8621165.chunk.css",
-    "static/js/2.402f954a.chunk.js": "/lianghao/static/js/2.402f954a.chunk.js",
-    "static/js/2.402f954a.chunk.js.map": "/lianghao/static/js/2.402f954a.chunk.js.map",
-    "static/js/3.287386bc.chunk.js": "/lianghao/static/js/3.287386bc.chunk.js",
-    "static/js/3.287386bc.chunk.js.map": "/lianghao/static/js/3.287386bc.chunk.js.map",
-    "index.html": "/lianghao/index.html",
-    "static/css/2.e8621165.chunk.css.map": "/lianghao/static/css/2.e8621165.chunk.css.map",
-    "static/css/main.11f0f598.chunk.css.map": "/lianghao/static/css/main.11f0f598.chunk.css.map",
-    "static/js/2.402f954a.chunk.js.LICENSE.txt": "/lianghao/static/js/2.402f954a.chunk.js.LICENSE.txt",
-    "static/media/index.css": "/lianghao/static/media/bg.c19dddbb.png",
-    "static/media/getFetch.cjs": "/lianghao/static/media/getFetch.582d29c4.cjs"
+    "main.css": "/Supezy/static/css/main.aaa3b2e5.chunk.css",
+    "main.js": "/Supezy/static/js/main.c98599f2.chunk.js",
+    "main.js.map": "/Supezy/static/js/main.c98599f2.chunk.js.map",
+    "runtime-main.js": "/Supezy/static/js/runtime-main.3e894c56.js",
+    "runtime-main.js.map": "/Supezy/static/js/runtime-main.3e894c56.js.map",
+    "static/css/2.e8621165.chunk.css": "/Supezy/static/css/2.e8621165.chunk.css",
+    "static/js/2.402f954a.chunk.js": "/Supezy/static/js/2.402f954a.chunk.js",
+    "static/js/2.402f954a.chunk.js.map": "/Supezy/static/js/2.402f954a.chunk.js.map",
+    "static/js/3.287386bc.chunk.js": "/Supezy/static/js/3.287386bc.chunk.js",
+    "static/js/3.287386bc.chunk.js.map": "/Supezy/static/js/3.287386bc.chunk.js.map",
+    "index.html": "/Supezy/index.html",
+    "static/css/2.e8621165.chunk.css.map": "/Supezy/static/css/2.e8621165.chunk.css.map",
+    "static/css/main.aaa3b2e5.chunk.css.map": "/Supezy/static/css/main.aaa3b2e5.chunk.css.map",
+    "static/js/2.402f954a.chunk.js.LICENSE.txt": "/Supezy/static/js/2.402f954a.chunk.js.LICENSE.txt",
+    "static/media/index.css": "/Supezy/static/media/bg.c19dddbb.png",
+    "static/media/getFetch.cjs": "/Supezy/static/media/getFetch.582d29c4.cjs"
   },
   "entrypoints": [
-    "static/js/runtime-main.a7d9375d.js",
+    "static/js/runtime-main.3e894c56.js",
     "static/css/2.e8621165.chunk.css",
     "static/js/2.402f954a.chunk.js",
-    "static/css/main.11f0f598.chunk.css",
-    "static/js/main.be68a396.chunk.js"
+    "static/css/main.aaa3b2e5.chunk.css",
+    "static/js/main.c98599f2.chunk.js"
   ]
 }
