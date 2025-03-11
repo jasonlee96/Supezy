@@ -1,0 +1,27 @@
+{
+  "files": {
+    "main.css": "/lianghao/static/css/main.11f0f598.chunk.css",
+    "main.js": "/lianghao/static/js/main.be68a396.chunk.js",
+    "main.js.map": "/lianghao/static/js/main.be68a396.chunk.js.map",
+    "runtime-main.js": "/lianghao/static/js/runtime-main.a7d9375d.js",
+    "runtime-main.js.map": "/lianghao/static/js/runtime-main.a7d9375d.js.map",
+    "static/css/2.e8621165.chunk.css": "/lianghao/static/css/2.e8621165.chunk.css",
+    "static/js/2.402f954a.chunk.js": "/lianghao/static/js/2.402f954a.chunk.js",
+    "static/js/2.402f954a.chunk.js.map": "/lianghao/static/js/2.402f954a.chunk.js.map",
+    "static/js/3.287386bc.chunk.js": "/lianghao/static/js/3.287386bc.chunk.js",
+    "static/js/3.287386bc.chunk.js.map": "/lianghao/static/js/3.287386bc.chunk.js.map",
+    "index.html": "/lianghao/index.html",
+    "static/css/2.e8621165.chunk.css.map": "/lianghao/static/css/2.e8621165.chunk.css.map",
+    "static/css/main.11f0f598.chunk.css.map": "/lianghao/static/css/main.11f0f598.chunk.css.map",
+    "static/js/2.402f954a.chunk.js.LICENSE.txt": "/lianghao/static/js/2.402f954a.chunk.js.LICENSE.txt",
+    "static/media/index.css": "/lianghao/static/media/bg.c19dddbb.png",
+    "static/media/getFetch.cjs": "/lianghao/static/media/getFetch.582d29c4.cjs"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.a7d9375d.js",
+    "static/css/2.e8621165.chunk.css",
+    "static/js/2.402f954a.chunk.js",
+    "static/css/main.11f0f598.chunk.css",
+    "static/js/main.be68a396.chunk.js"
+  ]
+}
