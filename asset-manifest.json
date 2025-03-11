@@ -1,8 +1,8 @@
 {
   "files": {
     "main.css": "/Supezy/static/css/main.aaa3b2e5.chunk.css",
-    "main.js": "/Supezy/static/js/main.acc596b9.chunk.js",
-    "main.js.map": "/Supezy/static/js/main.acc596b9.chunk.js.map",
+    "main.js": "/Supezy/static/js/main.dd516443.chunk.js",
+    "main.js.map": "/Supezy/static/js/main.dd516443.chunk.js.map",
     "runtime-main.js": "/Supezy/static/js/runtime-main.3e894c56.js",
     "runtime-main.js.map": "/Supezy/static/js/runtime-main.3e894c56.js.map",
     "static/css/2.e8621165.chunk.css": "/Supezy/static/css/2.e8621165.chunk.css",
@@ -22,6 +22,6 @@
     "static/css/2.e8621165.chunk.css",
     "static/js/2.91cb7e2e.chunk.js",
     "static/css/main.aaa3b2e5.chunk.css",
-    "static/js/main.acc596b9.chunk.js"
+    "static/js/main.dd516443.chunk.js"
   ]
 }
